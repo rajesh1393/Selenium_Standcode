@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FileManagerTestSuite">
+
+	<parameter name="username" value="admin" />
+	<parameter name="password" value="angler123" />
+
+	<test name="Login">
+		<classes>
+			<class name="com.randtronics.dpm.filemanager.executionEngine.Login_Test">
+				<methods>
+					<include name="setUpExcel" />
+					<include name="testLoginValidClick" />
+					<include name="testLoginValidEnter" />
+					<include name="testLoginInvalid" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="System Management">
+		<classes>
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.SystemUser_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addSysUser_Valid" />
+					<include name="addSysUser_Invalid" />
+					<include name="deleteSysUser_CheckDialog" />
+					<include name="deleteSysUser_Yes" />
+					<include name="deleteSysUser_No" />
+					<include name="viewSysUser" />
+					<include name="modifySysUser_Valid" />
+					<include name="modifySysUser_InValid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.SystemRole_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addSysRole_Valid" />
+					<include name="addSysRole_Invalid" />
+					<include name="deleteSysRole_CheckDialog" />
+					<include name="deleteSysRole_Yes" />
+					<include name="deleteSysUser_No" />
+					<include name="viewSysRole" />
+					<include name="modifySysRole_Valid" />
+					<include name="modifySysRole_InValid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.SystemGroup_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addSysGroup_Valid" />
+					<include name="addSysGroup_Invalid" />
+					<include name="deleteSysGroup_CheckDialog" />
+					<include name="deleteSysGroup_Yes" />
+					<include name="deleteSysGroup_No" />
+					<include name="viewSysGroup" />
+					<include name="modifySysGroup_Valid" />
+					<include name="modifySysGroup_InValid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class name="com.randtronics.dpm.filemanager.executionEngine.Email_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="Email_Valid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.PasswordMgmt_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="pwdComplexity" />
+					<include name="minimumLength" />
+					<include name="oldPasswordToRemember" />
+					<exclude name="accountLockoutThreshold" />
+					<exclude name="expirationPeriod" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class name="com.randtronics.dpm.filemanager.executionEngine.Device_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="moveDevice" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class name="com.randtronics.dpm.filemanager.executionEngine.License_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="requestLicense" />
+					<include name="importLicense" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.Systeminfo_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="Backupsystem_Valid" />
+					<include name="Restoresystem_Valid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Policy">
+		<classes>
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.PolicyUser_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addPolicyUser_Valid" />
+					<include name="addPolicyUser_Invalid" />
+					<include name="deletePolicyUser_CheckDialog" />
+					<include name="deletePolicyUser_Yes" />
+					<include name="deletePolicyUser_No" />
+					<include name="viewPolicyUser" />
+					<include name="modifyPolicyUser_Valid" />
+					<include name="modifyPolicyUser_InValid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addPolicyRole_Valid" />
+					<include name="addPolicyRole_Invalid" />
+					<exclude name="deletePolicyRole_CheckDialog" />
+					<exclude name="deletePolicyRole_Yes" />
+					<exclude name="deletePolicyRole_No" />
+					<exclude name="viewPolicyRole" />
+					<include name="modifyPolicyRole_Valid" />
+					<include name="modifyPolicyRole_Invalid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.PolicyAppTemplate_Test">
+				<methods>
+					<include name="signIn" />
+					<exclude name="addPolicyAppTemplate_Valid" />
+					<exclude name="addPolicyAppTemplate_Invalid" />
+					<exclude name="viewPolicyAppTemplate_Valid" />
+					<exclude name="deletePolicyAppTemp_CheckDialog" />
+					<exclude name="deletePolicyAppTemp_Yes" />
+					<exclude name="deletePolicyAppTemp_No" />
+					<include name="modifyPolicyAppTemp_Valid" />
+					<exclude name="modifyPolicyAppTemp_Invalid" />
+					<include name="signOut" />
+
+				</methods>
+			</class>
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.PolicyFileFolder_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addPolicyFileFolder_Valid" />
+					<include name="addPolicyFileFolder_Invalid" />
+					<include name="deletePolicyFileFolder_CheckDialog" />
+					<include name="deletePolicyFileFolder_Yes" />
+					<include name="deletePolicyFileFolder_No" />
+					<include name="signOut" />
+
+				</methods>
+			</class>
+
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.PolicyTemplate_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addPolicyTemp_Valid" />
+					<include name="deletePolicyTemp_CheckDialog" />
+					<include name="deletePolicyTsemp_Yes" />
+					<include name="deletePolicyTemp_No" />
+					<include name="signOut" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Audit">
+		<classes>
+			<class
+				name="com.randtronics.dpm.filemanager.executionEngine.EventConfig_Test">
+				<methods>
+					<include name="signIn" />
+					<include name="addEventActionRule_Valid" />
+					<include name="addEventActionRule_Invalid" />
+					<include name="deleteEventActionRule_CheckDialog" />
+					<include name="deleteEventActionRule_Yes" />
+					<include name="deleteEventActionRule_No" />
+					<include name="viewEventActionRule" />
+					<include name="modifyEventActionRule_Valid" />
+					<include name="modifyEventActionRule_Invalid" />
+					<include name="signOut" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Profile">
+		<classes>
+			<class name="com.randtronics.dpm.filemanager.executionEngine.Profile_Test">
+				<methods>
+					<exclude name="signIn" />
+					<exclude name="test_DisabledState" />
+					<exclude name="test_Email_ProfileSave" />
+					<exclude name="test_Email_ProfileCancel" />
+					<exclude name="test_Profile_Changepassword_Valid" />
+					<exclude name="test_Profile_Changepassword_InValid" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 

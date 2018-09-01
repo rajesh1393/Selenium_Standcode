@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="FileManagerTestSuite" duration-ms="44863" started-at="2016-09-27T12:39:59Z" finished-at="2016-09-27T12:40:44Z">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="5" started-at="2016-09-27T12:39:59Z" finished-at="2016-09-27T12:39:59Z">
+    </test> <!-- Login -->
+    <test name="System Management" duration-ms="0" started-at="2016-09-27T12:39:59Z" finished-at="2016-09-27T12:39:59Z">
+    </test> <!-- System Management -->
+    <test name="Policy" duration-ms="44773" started-at="2016-09-27T12:39:59Z" finished-at="2016-09-27T12:40:44Z">
+      <class name="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="beforeSuite" is-config="true" duration-ms="265" started-at="2016-09-27T18:09:59Z" finished-at="2016-09-27T18:09:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="beforeClass" is-config="true" duration-ms="3133" started-at="2016-09-27T18:09:59Z" finished-at="2016-09-27T18:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="signIn(java.lang.String, java.lang.String)[pri:0, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="signIn" duration-ms="835" started-at="2016-09-27T18:10:02Z" finished-at="2016-09-27T18:10:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[angler123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="addPolicyRole_Valid()[pri:1, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="addPolicyRole_Valid" duration-ms="3071" started-at="2016-09-27T18:10:03Z" finished-at="2016-09-27T18:10:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPolicyRole_Valid -->
+        <test-method status="PASS" signature="addPolicyRole_Invalid()[pri:2, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="addPolicyRole_Invalid" duration-ms="3016" started-at="2016-09-27T18:10:06Z" finished-at="2016-09-27T18:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPolicyRole_Invalid -->
+        <test-method status="PASS" signature="modifyPolicyRole_Valid()[pri:6, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="modifyPolicyRole_Valid" duration-ms="3068" started-at="2016-09-27T18:10:09Z" finished-at="2016-09-27T18:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyPolicyRole_Valid -->
+        <test-method status="PASS" signature="modifyPolicyRole_Invalid()[pri:7, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="modifyPolicyRole_Invalid" duration-ms="29763" started-at="2016-09-27T18:10:12Z" finished-at="2016-09-27T18:10:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyPolicyRole_Invalid -->
+        <test-method status="PASS" signature="signOut()[pri:9, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="signOut" duration-ms="553" started-at="2016-09-27T18:10:42Z" finished-at="2016-09-27T18:10:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOut -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test@1bb5a082]" name="afterClass" is-config="true" duration-ms="1315" started-at="2016-09-27T18:10:43Z" finished-at="2016-09-27T18:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test -->
+    </test> <!-- Policy -->
+  </suite> <!-- FileManagerTestSuite -->
+</testng-results>

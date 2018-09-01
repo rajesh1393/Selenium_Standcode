@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-FileManagerTestSuite">
+              <span class="suite-name border-passed">FileManagerTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-FileManagerTestSuite">
+                    <span>C:\Workspace_Maven\Randtronics_FileManager\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-FileManagerTestSuite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-FileManagerTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-FileManagerTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-FileManagerTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-FileManagerTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-FileManagerTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FileManagerTestSuite" class="hide-methods passed suite-FileManagerTestSuite"> (hide)</a> <!-- hide-methods passed suite-FileManagerTestSuite -->
+                      <a href="#" panel-name="suite-FileManagerTestSuite" class="show-methods passed suite-FileManagerTestSuite"> (show)</a> <!-- show-methods passed suite-FileManagerTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-FileManagerTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FileManagerTestSuite" title="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test" hash-for-method="addPolicyRole_Invalid">addPolicyRole_Invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FileManagerTestSuite" title="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test" hash-for-method="addPolicyRole_Valid">addPolicyRole_Valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FileManagerTestSuite" title="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test" hash-for-method="modifyPolicyRole_Invalid">modifyPolicyRole_Invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FileManagerTestSuite" title="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test" hash-for-method="modifyPolicyRole_Valid">modifyPolicyRole_Valid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FileManagerTestSuite" title="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test" hash-for-method="signIn(admin, angler123)">signIn(admin, angler123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FileManagerTestSuite" title="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test" hash-for-method="signOut">signOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FileManagerTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FileManagerTestSuite" class="panel FileManagerTestSuite">
+          <div class="suite-FileManagerTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPolicyRole_Invalid">
+                  </a> <!-- addPolicyRole_Invalid -->
+                  <span class="method-name">addPolicyRole_Invalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPolicyRole_Valid">
+                  </a> <!-- addPolicyRole_Valid -->
+                  <span class="method-name">addPolicyRole_Valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyPolicyRole_Invalid">
+                  </a> <!-- modifyPolicyRole_Invalid -->
+                  <span class="method-name">modifyPolicyRole_Invalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyPolicyRole_Valid">
+                  </a> <!-- modifyPolicyRole_Valid -->
+                  <span class="method-name">modifyPolicyRole_Valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn(admin, angler123)">
+                  </a> <!-- signIn(admin, angler123) -->
+                  <span class="method-name">signIn</span>
+                  <span class="parameters">(admin, angler123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signOut">
+                  </a> <!-- signOut -->
+                  <span class="method-name">signOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FileManagerTestSuite-class-passed -->
+        </div> <!-- panel FileManagerTestSuite -->
+        <div panel-name="test-xml-FileManagerTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Workspace_Maven\Randtronics_FileManager\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;FileManagerTestSuite&quot;&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;angler123&quot;/&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;admin&quot;/&gt;
+  &lt;test name=&quot;Login&quot;&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test name=&quot;System Management&quot;&gt;
+  &lt;/test&gt; &lt;!-- System Management --&gt;
+  &lt;test name=&quot;Policy&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;signIn&quot;/&gt;
+          &lt;include name=&quot;addPolicyRole_Valid&quot;/&gt;
+          &lt;include name=&quot;addPolicyRole_Invalid&quot;/&gt;
+          &lt;include name=&quot;modifyPolicyRole_Valid&quot;/&gt;
+          &lt;include name=&quot;modifyPolicyRole_Invalid&quot;/&gt;
+          &lt;include name=&quot;signOut&quot;/&gt;
+          &lt;exclude name=&quot;deletePolicyRole_CheckDialog&quot;/&gt;
+          &lt;exclude name=&quot;deletePolicyRole_Yes&quot;/&gt;
+          &lt;exclude name=&quot;deletePolicyRole_No&quot;/&gt;
+          &lt;exclude name=&quot;viewPolicyRole&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Policy --&gt;
+&lt;/suite&gt; &lt;!-- FileManagerTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FileManagerTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FileManagerTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login (0 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">System Management (0 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Policy (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FileManagerTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FileManagerTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FileManagerTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FileManagerTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FileManagerTestSuite');
+function tableData_FileManagerTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'modifyPolicyRole_Invalid')
+data.setCell(0, 2, 'com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test')
+data.setCell(0, 3, 29763);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addPolicyRole_Valid')
+data.setCell(1, 2, 'com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test')
+data.setCell(1, 3, 3071);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'modifyPolicyRole_Valid')
+data.setCell(2, 2, 'com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test')
+data.setCell(2, 3, 3068);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addPolicyRole_Invalid')
+data.setCell(3, 2, 'com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test')
+data.setCell(3, 3, 3016);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'signIn')
+data.setCell(4, 2, 'com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test')
+data.setCell(4, 3, 835);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'signOut')
+data.setCell(5, 2, 'com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test')
+data.setCell(5, 3, 553);
+window.suiteTableData['FileManagerTestSuite']= { tableData: data, tableDiv: 'times-div-FileManagerTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <div id="times-div-FileManagerTestSuite">
+              </div> <!-- times-div-FileManagerTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FileManagerTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FileManagerTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FileManagerTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">viewPolicyRole</span>
+                <br/>
+                <span class="ignored-method-name">deletePolicyRole_CheckDialog</span>
+                <br/>
+                <span class="ignored-method-name">deletePolicyRole_Yes</span>
+                <br/>
+                <span class="ignored-method-name">deletePolicyRole_No</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FileManagerTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">357 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">signIn(admin, angler123)</span>
+                <span class="method-start">3499 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPolicyRole_Valid</span>
+                <span class="method-start">4336 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPolicyRole_Invalid</span>
+                <span class="method-start">7408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyPolicyRole_Valid</span>
+                <span class="method-start">10425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyPolicyRole_Invalid</span>
+                <span class="method-start">13494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signOut</span>
+                <span class="method-start">43258 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">43812 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

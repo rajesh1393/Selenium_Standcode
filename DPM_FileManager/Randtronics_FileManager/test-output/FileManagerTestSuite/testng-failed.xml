@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FileManagerTestSuite]">
+  <parameter name="password" value="angler123"/>
+  <parameter name="username" value="admin"/>
+  <test name="Policy(failed)">
+    <classes>
+      <class name="com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="signIn" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.randtronics.dpm.filemanager.executionEngine.PolicyRole_Test -->
+    </classes>
+  </test> <!-- Policy(failed) -->
+</suite> <!-- Failed suite [FileManagerTestSuite] -->
